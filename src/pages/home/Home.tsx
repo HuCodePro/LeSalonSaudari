@@ -12,6 +12,7 @@ const Home = () => {
     return (
         <div>
             <Nav />
+		<h1>test</h1>
             <Carousel
       opts={{
         align: "start",
