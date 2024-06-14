@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif', ],
         caveat: ['Caveat'],
-        opens: ['Open+Sans']
+        opens: ['Open+Sans'],
+        syncopate: ['Syncopate']
         
       },
     },

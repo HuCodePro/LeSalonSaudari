@@ -12,7 +12,7 @@ const Services = () => {
     return (
         <div>
             <Nav />
-            <h1 className=" text-center text-5xl font-opens  mt-10" >Nos prestations</h1>
+            <h1 className=" text-center text-5xl font-opens  mt-10">Nos prestations</h1>
 
 <div className="flex mt-20 justify-center items-stretch space-x-20" >
 
