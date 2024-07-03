@@ -12,14 +12,20 @@ import {
   CarouselSlides,
 } from 'keep-react'
 
+const dataProduits = [ //ICI ajour autant de produit ou retire ca ajoutera à la liste 
+  { id: 1, name: 'crème Coco', img: "src/assets/produits/cassiere33.webp" },
+  { id: 2, name: 'huile Argant au sucre', img: "src/assets/produits/cassiere2.webp" }
+]
+
 export const Produit = () => {
   return (
     <Carousel options={{ loop: true }} plugins={[classNames()]}>
       <CarouselSlides>
-        {[1, 2, 3, 4, 5].map((slide) => (
-          <CarouselItem key={slide} className="flex-[0_0_80%] [&:not(.is-snapped)]:opacity-[0.16]">
-            <img className="rounded-xl" src={"src/assets/produits/cassiere33.webp"} alt="Carousel Item" />
-            <img className="rounded-xl" src={"src/assets/produits/cassiere33.webp"} alt="Carousel Item" />
+        {dataProduits.map((data) => ( // ICI
+          <CarouselItem key={data.id} className="flex-[0_0_80%] [&:not(.is-snapped)]:opacity-[0.16]">
+            <p >{data.name}</p>
+            <img className="rounded-xl" src={data.img} alt="Carousel Item" />
+
           </CarouselItem>
         ))}
       </CarouselSlides>
