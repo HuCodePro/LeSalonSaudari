@@ -1,25 +1,10 @@
-import React, { useState } from "react";
-import { useSwipeable } from "react-swipeable";
+
 import Nav from "../../components/nav/Nav";
-import { Carousel, CarouselContent, CarouselItem } from "../../components/carousel/Carousel";
-import { Card, CardContent } from "../../components/card/Cards";
+import Produit from "../../components/carousel/Produit";
+
+
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const totalItems = 5;
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalItems);
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalItems) % totalItems);
-  };
-
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: handleNext,
-    onSwipedRight: handlePrev,
-  });
 
   return (
     <div>
@@ -50,7 +35,7 @@ const Home = () => {
         </div>
 
         <div className="w-[25%] border-2">
-           <div
+          <div
             className="relative flex flex-col w-full h-full overflow-scroll text-gray-700 bg-white border-2 bg-clip-border">
             <table className="w-full text-left table-auto min-w-max">
               <thead>
@@ -174,21 +159,7 @@ const Home = () => {
 
       <h1 className="mt-12 text-center text-5xl font-syncopate">Nos Gammes De Produits</h1>
 
-      <Carousel className="w-full ">
-      <CarouselContent className="">
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-2xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+<Produit/>
 
     </div>
   );
