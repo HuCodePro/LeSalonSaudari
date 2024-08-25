@@ -7,6 +7,14 @@ import TarifsHomme from "./pages/coiffeuse/TarifsHomme";
 import TarifsFemme from "./pages/coiffeuse/TarifsFemme";
 import TarifsBrushing from "./pages/coiffeuse/TarifsBrushing";
 import TarifsTechniques from "./pages/coiffeuse/TarifsTechniques";
+import TarifsCoiffage from "./pages/coiffeuse/TarifsCoiffage";
+import TarifsMariee from "./pages/coiffeuse/TarifsMariee";
+import TarifsSoins from "./pages/coiffeuse/TarifsSoins";
+import TarifEpilation from "./pages/estheticienne/TarifEpilation";
+import TarifsSoinsCorps from "./pages/estheticienne/TarifsSoinsCorps";
+import TarifsSoinsVisage from "./pages/estheticienne/TarifsSoinsVisage";
+import TarifsRegard from "./pages/estheticienne/TarifsRegard";
+import TarifsOngles from "./pages/estheticienne/TarifsOngles";
 
 const App = () => {
   return (
@@ -21,6 +29,14 @@ const App = () => {
         <Route path="/femme" element={<TarifsFemme/>}/>
         <Route path="/brushing" element={<TarifsBrushing/>}/>
         <Route path="/technique" element={<TarifsTechniques/>}/>
+        <Route path="/coiffage" element={<TarifsCoiffage/>}/>
+        <Route path="/mariee" element={<TarifsMariee/>}/>
+        <Route path="/soins" element={<TarifsSoins/>}/>
+        <Route path="/epilation" element={<TarifEpilation/>}/>
+        <Route path="/soinsducorps" element={<TarifsSoinsCorps/>}/>
+        <Route path="/soinsduvisage" element={<TarifsSoinsVisage/>}/>
+        <Route path="/beauteduregard" element={<TarifsRegard/>}/>
+        <Route path="/beautedesongles" element={<TarifsOngles/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -10,7 +10,8 @@ export default {
         sans: ['Roboto', 'sans-serif', ],
         caveat: ['Caveat'],
         opens: ['Open+Sans'],
-        syncopate: ['Syncopate']
+        syncopate: ['Syncopate'],
+        cormorant: ['Cormorant+Garamond'],
         
       },
     },

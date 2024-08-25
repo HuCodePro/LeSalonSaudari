@@ -11,7 +11,7 @@ const Services = () => {
       <Nav />
       <h1 className=" text-center text-5xl font-syncopate  mt-10">Nos prestations</h1>
 
-      <div className="flex mt-20 justify-center items-stretch space-x-20" >
+      <div className="flex flex-wrap mt-20 justify-center items-stretch">
 
         <Box
           sx={{
@@ -33,7 +33,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -52,9 +52,9 @@ const Services = () => {
               }}
             >
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
-               <a href="/homme">Homme</a>
-              </Typography>
+              <a href="/homme"> <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+                Homme
+              </Typography></a>
             </CardContent>
           </Card>
         </Box>
@@ -79,7 +79,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -99,9 +99,11 @@ const Services = () => {
             >
 
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
-                <a href="/femme">Femme</a>
-              </Typography>
+              <a href="/femme">
+                <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+                  Femme
+                </Typography>
+              </a>
             </CardContent>
           </Card>
         </Box>
@@ -126,7 +128,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -145,16 +147,14 @@ const Services = () => {
               }}
             >
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
-                <a href="/homme">Enfant</a>
-              </Typography>
+              <a href="/homme">   <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+                Enfant
+              </Typography></a>
             </CardContent>
           </Card>
         </Box>
 
-      </div>
 
-      <div className="flex mt-20 justify-center items-stretch space-x-20" >
 
         <Box
           sx={{
@@ -176,7 +176,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -195,11 +195,11 @@ const Services = () => {
               }}
             >
 
-<a href="/brushing"><Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+              <a href="/brushing"><Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
                 Brushing
               </Typography></a>
 
-        
+
             </CardContent>
           </Card>
         </Box>
@@ -224,7 +224,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -243,10 +243,12 @@ const Services = () => {
               }}
             >
 
-<a href="/technique"><Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
-                Techniques
-              </Typography></a>
-              
+              <a href="/technique">
+                <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+                  Techniques
+                </Typography>
+              </a>
+
             </CardContent>
           </Card>
         </Box>
@@ -271,7 +273,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -290,16 +292,15 @@ const Services = () => {
               }}
             >
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+              <a href="/coiffage"><Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
                 Coiffage
-              </Typography>
+              </Typography></a>
             </CardContent>
           </Card>
         </Box>
 
-      </div>
+    
 
-      <div className="flex mt-20 justify-center items-stretch space-x-20" >
 
         <Box
           sx={{
@@ -321,7 +322,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -340,9 +341,9 @@ const Services = () => {
               }}
             >
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+              <a href="/mariee"><Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
                 Forfait Mariée
-              </Typography>
+              </Typography></a>
             </CardContent>
           </Card>
         </Box>
@@ -367,7 +368,7 @@ const Services = () => {
             },
           }}
         >
-          <Card className="relative flex flex-col mt-6 text-gray-700  shadow-md bg-clip-border rounded-xl"
+          <Card className="m-5"
             variant="outlined"
             sx={{
               minHeight: '200px',
@@ -386,9 +387,9 @@ const Services = () => {
               }}
             >
 
-              <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
+              <a href="/soins"> <Typography className=" cursor-pointer align-middle select-none font-opens text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-[95%]" level="h2" fontSize="xs" textColor="#fff" m={2}>
                 Soins
-              </Typography>
+              </Typography></a>
             </CardContent>
           </Card>
         </Box>

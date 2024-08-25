@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -17,15 +18,19 @@ function ContactForm() {
     });
   };
 
-  const buttonClick = () => {
-    setShowMessage(true);
-    reset();
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send form data to an API
-    console.log('Form submitted:', formData);
+
+    // Configuration d'EmailJS pour envoyer l'email
+    emailjs.sendForm('service_qqtq94s', 'template_64h1hj9', e.target, 'W7RxPm05ZcE8pU2Gu')
+      .then((result) => {
+        console.log(result.text);
+        setShowMessage(true);
+        reset();
+      }, (error) => {
+        console.log(error.text);
+        alert('Une erreur est survenue. Veuillez réessayer.' + " " + error.text);
+      });
   };
 
   const reset = () => {
@@ -37,7 +42,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center  p-5 ">
+    <div className="flex justify-center items-center p-5">
       <form
         className="bg-white p-8 rounded-3xl shadow-lg max-w-4xl w-full"
         onSubmit={handleSubmit}
@@ -75,13 +80,12 @@ function ContactForm() {
             onChange={handleChange}
             required
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-3xl"
-            rows="4"
+            
           />
         </div>
-        {showMessage && <p className="text-green-500">Le formulaire est envoyé zebi</p>}
+        {showMessage && <p className="text-green-500">Le formulaire a été envoyé avec succès.</p>}
         <button
           type="submit"
-          onClick={buttonClick}
           className="w-full p-3 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition-colors rounded-3xl"
         >
           Envoyer
